@@ -49,9 +49,6 @@ It has been named SPARKS whiich starts from 22nd December and goes on till 24th 
 
 
 
-# Hosted URL
-https://sparks-mriush.herokuapp.com/
-
 # Features Implemented
 ## Frontend
 The Frontend has been implemented with Glassmorphism and particle.js for most of the effects. There is further use of DOM manipulation for making the UI more responsive.<br>
