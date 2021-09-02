@@ -1,0 +1,234 @@
+body{
+	background: url(../images/bg2.jpg)  no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	margin: 1.5% 1% 3%;
+}
+
+a{
+	text-decoration: none;
+}
+
+#logo{
+	font: 25pt "Vivaldi";
+	font-weight: 10px;
+	color: white;
+	margin: 0 15% 0 1%;
+}
+
+#year{
+	color: red;
+	text-shadow: -5px -2px 10px #f00;
+}
+
+#menuIcon{
+	font-size:30px;
+	cursor:pointer
+}
+
+.navTools{
+	font: 12pt "Corbel";
+	color: #D9D9D9;
+	margin: 1% 4% 0 0;
+	transition-duration: 300ms;
+}
+
+.navTools:hover{
+	color: white;
+	font-size: 16pt;
+	transition-duration: 300ms;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	justify-items: baseline;
+}
+
+#header2{
+	display: none;
+}
+
+.sideNav{
+	display: none;
+}
+
+#sparks{
+	font: 120pt "Vivaldi";
+	text-align: center;
+	text-shadow: -5px -2px 10px #fff;
+}
+
+#about{
+	font: 22pt "Corbel";
+	line-height: 1.6;
+	text-align: justify;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.05);
+	border-top: 3px solid rgba(255, 255, 255, 0.4);
+   	border-left: 6px solid rgba(255, 255, 255, 0.4);	
+	padding-right: 6vw;
+	padding-left: 6vw;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	width: 65%;
+	margin: auto;
+	backdrop-filter: blur(10px);
+	box-shadow: 0, 10px, 25px, rgba(0, 0, 0, 0.2);
+}
+
+.button{
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 20pt;
+	padding: 5pt 30pt;
+	border: 3px solid white;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	margin: auto;
+}
+
+.button:hover{
+	color: black;
+	background: white;
+}
+
+#follow{
+	font:17pt "Garamond";
+	margin-right: 20pt;
+}
+
+img.mediaLogo{
+	width: 25pt;
+	height: 25pt;
+	margin: 0 5pt 0 8pt;
+	border-width: 0;
+	border-radius: 0;
+	transform: translateY(26px)
+}
+
+#footer{
+	display: flex;
+	justify-content: center;
+  	transform: translateY(100pt);
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+#particles-js {
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+canvas.particles-js-canvas-el{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+@media only screen and (max-width: 1000px){
+	#header{
+		display: none;
+	}
+
+	#header2{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.closebtn{
+		color: #D9D9D9;
+	}
+
+	.closebtn:hover{
+		color: white;
+	}
+
+	.navTools{
+		font: 20pt "Corbel";
+		color: #D9D9D9;
+		margin: 5%;
+		text-align: center;
+	}
+
+	.navTools:hover{
+		font-size: 26pt;
+	}
+
+	.sideNav{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		overflow-x: hidden;
+		padding-top: 15px;
+		transition: 0.5s;
+	}
+
+	.sideNav .closebtn{
+		position: absolute;
+		top: 0;
+		left: 25px;
+		font-size: 36px;
+		margin-right: 50px;
+	}
+
+	#sparks{
+		font-size: 19vw;
+	}
+	
+	#about{
+		font-size: 22pt;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#about{
+		font-size: 18pt;
+	}
+}
+
+@media only screen and (max-device-width: 450px){
+	body{
+		margin-top:20pt
+	}
+	
+	#logo{
+		font-size: 40pt;
+	}
+	#menuIcon{
+		font-size: 40pt; 
+	}
+	
+	.navTools{
+		font-size: 40pt;
+	}
+	
+	#about{
+	   font-size: 36pt;	
+	}
+	
+	#follow{
+		font-size:30pt;
+	}
+
+	img.mediaLogo{
+		width: 45pt;
+		height: 45pt;
+		transform: translateY(45px);
+	}
+
+	.button{
+		font-size: 28pt;
+	}
+}

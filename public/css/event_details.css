@@ -1,0 +1,296 @@
+body{
+	background: url(../images/bg2.jpg)  no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	margin: 1.5% 1% 3%;
+}
+
+a{
+	text-decoration: none;
+}
+
+#logo{
+	font: 25pt "Vivaldi";
+	font-weight: 10px;
+	color: white;
+	margin: 0 15% 0 1%;
+}
+
+#year{
+	color: red;
+	text-shadow: -5px -2px 10px #f00;
+}
+
+.navTools{
+	font: 12pt "Corbel";
+	color: #D9D9D9;
+	margin: 1% 4% 0 0;
+	transition-duration: 300ms;
+}
+
+.navTools:hover{
+	color: white;
+	font-size: 16pt;
+	transition-duration: 300ms;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	justify-items: baseline;
+}
+
+#header2{
+	display: none;
+}
+
+.sideNav{
+	display: none;
+}
+
+
+.heading{
+	font: 5vw "Broadway BT";
+	font-weight: bold;
+	letter-spacing: 2pt;
+	text-align: center;
+}
+
+.title{
+	font: 2.2vw "Corbel";
+	font-weight: bold;
+	letter-spacing: 1pt;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+  width: 33.1%;
+	padding: 7pt 0 7pt 0;
+}
+
+button{
+	border: none;
+	cursor: pointer;
+}
+
+#about1{
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.titleRow{
+	display: block;
+	justify-content: center;
+}
+
+.inTitle{
+	font: 2.2vw "Corbel;";
+	text-align: left;
+}
+
+.part1{
+	display: block;
+	text-align: justify;
+}
+
+.eventHeads, .eventOrganizers{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.part2{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.details{
+	font: 1.5vw "Corbel";
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 40pt;
+	overflow-y: scroll;
+}
+
+#about1Details, #about2Details, #about3Details, #about4aDetails, #about4bDetails, #about4cDetails, #about5aDetails, #about5bDetails, #about5cDetails, #about6Details, #about7Details, #about8Details, #about9Details, #about10Details, #about11Details{
+	overflow: hidden;
+	transition-delay: 400ms;
+}
+
+#rules1Details, #rules2Details, #rules3Details, #rules4aDetails, #rules4bDetails, #rules4cDetails, #rules5aDetails, #rules5bDetails, #rules5cDetails, #rules6Details, #rules7Details, #rules8Details, #rules9Details, #rules10Details, #rules11Details{
+	display: none;
+	overflow: hidden;
+	transition-delay: 400ms;
+}
+
+#register1Details, #register2Details, #register3Details, #register4aDetails, #register4bDetails, #register4cDetails, #register5aDetails, #register5bDetails, #register5cDetails, #register6Details, #register7Details, #register8Details, #register9Details, #register10Details, #register11Details{
+	display: none;
+	overflow: hidden;
+	transition-delay: 400ms;
+	font-size: 2vw; 
+	text-align: center
+}
+
+.loginBtn{
+	font: 2vw "Corbel";
+	font-weight: bold;
+	letter-spacing: 1pt;
+	text-align: center;
+	color: black;
+	background-color: white;
+  width: 25%;
+	padding: 5pt 0;
+	border-radius: 40px;
+	margin: auto;
+}
+
+.table{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20pt
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	background: rgba(200, 200, 255, 0.05);
+	backdrop-filter: blur(10px);
+	width: 90%;
+	padding: 20pt;
+	margin: auto;
+	border-top: 3px solid rgba(255, 255, 255, 0.4);
+	border-left: 6px solid rgba(255, 255, 255, 0.4);	
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+#follow{
+	font:17pt "Garamond";
+	margin-right: 20pt;
+}
+
+img.mediaLogo{
+	width: 25pt;
+	height: 25pt;
+	margin: 0 5pt 0 8pt;
+	border-width: 0;
+	border-radius: 0;
+	transform: translateY(26px)
+}
+
+body #footer{
+	display: flex;
+	justify-content: center;
+ 	transform: translateY(70pt);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#particles-js {
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+canvas.particles-js-canvas-el{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+@media only screen and (max-width: 1000px){
+	#header{
+		display: none;
+	}
+
+	#header2{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.closebtn{
+		color: #D9D9D9;
+	}
+
+	.closebtn:hover{
+		color: white;
+	}
+
+	.navTools{
+		font: 20pt "Corbel";
+		color: #D9D9D9;
+		margin: 5%;
+		text-align: center;
+	}
+	
+	.navTools:hover{
+		font-size: 26pt;
+	}
+
+	.sideNav{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		overflow-x: hidden;
+		padding-top: 15px;
+		transition: 0.5s;
+	}
+
+	.sideNav .closebtn{
+		position: absolute;
+		top: 0;
+		left: 25px;
+		font-size: 36px;
+		margin-right: 50px;
+	}
+
+	.titleElements{
+		font-size: 2.6vw;
+	}
+	
+	.elements{
+		font-size: 2.1vw;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.Days{
+		font-size: 2.7vw;
+	}
+	
+	.titleElements{
+		font-size: 3.2vw;
+	}
+	
+	.elements{
+		font-size: 2.8vw;
+	}
+}
+
+@media only screen and (max-device-width: 600px){
+  .Days{
+		font-size: 2.7vw;
+	}
+	
+	.titleElements{
+		font-size: 3.2vw;
+	}
+	
+	.elements{
+		font-size: 2.8vw;
+	}
+}
